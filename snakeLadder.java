@@ -5,10 +5,12 @@ public class snakeLadder {
 
 	public static void main(String[] args) {
 		int player_position = 0;
+		int dice_roll_count = 0;
 		System.out.println("Welcome to Snake and Ladder Simulation Program");
 		while (player_position < 100) {
 			double dice_roll = Math.floor(Math.random() * 10) % 6 + 1;
 			double play_check = Math.floor(Math.random() *10) % 3;
+			dice_roll_count++;
 			switch((int)play_check) {
 				case IS_LADDER:
 					player_position+=dice_roll;
@@ -21,7 +23,9 @@ public class snakeLadder {
 			}
 			if (player_position > 100)
 				player_position-=dice_roll;
+			System.out.println("You are at position "+player_position);
 		}
-		System.out.println("Player position is "+player_position);
+		System.out.println("********YOU WON********");
+		System.out.println("The dice was rolled for "+dice_roll_count+" times.");
 	}
 }
