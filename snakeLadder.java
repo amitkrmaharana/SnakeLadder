@@ -1,4 +1,4 @@
-public class snakeLadder {
+public class SnakeLadder {
 
 	public static final int IS_LADDER = 1;
 	public static final int IS_SNAKE = 2;
