@@ -22,6 +22,7 @@ public class snakeLadder {
 			if (player_position > 100)
 				player_position-=dice_roll;
 		}
+		System.out.println("*******YOU WON*******");
 		System.out.println("Player position is "+player_position);
 	}
 }
