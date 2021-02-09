@@ -20,6 +20,7 @@ public class snakeLadder {
 					break;
 			}
 		}
+		System.out.println("*******YOU WON*******");
 		System.out.println("Player position is "+player_position);
 	}
 }
