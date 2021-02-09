@@ -19,6 +19,8 @@ public class snakeLadder {
 						player_position = 0;
 					break;
 			}
+			if (player_position > 100)
+				player_position-=dice_roll;
 		}
 		System.out.println("Player position is "+player_position);
 	}
