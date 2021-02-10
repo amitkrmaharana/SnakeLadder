@@ -86,7 +86,7 @@ public class SnakeLadder {
 					System.out.println("NO PLAY");
                         }
                         if (player2_position > 100)
-                                player2_position-=dice_roll2;
+                                player2_position -= dice_roll2;
                         System.out.println("Player2 is at position "+player2_position);
 
 		}
