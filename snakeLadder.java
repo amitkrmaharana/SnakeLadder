@@ -40,7 +40,7 @@ public class SnakeLadder {
 								break;
 						}
 					}
-					break;
+				break;
 				case IS_SNAKE:
 					player1_position -= dice_roll1;
 					if (player1_position < 0)
@@ -75,7 +75,7 @@ public class SnakeLadder {
                                                                 break;
 						}
                                         }
-                                        break;
+                                break;
                                 case IS_SNAKE:
                                         player2_position -= dice_roll2;
                                         if (player2_position < 0)
