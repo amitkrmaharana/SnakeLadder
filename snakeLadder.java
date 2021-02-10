@@ -16,10 +16,10 @@ public class SnakeLadder {
 			dice_roll_count++;
 			switch((int)play_check1) {
 				case IS_LADDER:
-					player1_position+=dice_roll1;
+					player1_position += dice_roll1;
 					break;
 				case IS_SNAKE:
-					player1_position-=dice_roll1;
+					player1_position -= dice_roll1;
 					if (player1_position < 0)
 						player1_position = 0;
 					break;
@@ -29,16 +29,16 @@ public class SnakeLadder {
 			System.out.println("Player1 is at position "+player1_position);
 			switch((int)play_check2) {
                                 case IS_LADDER:
-                                        player2_position+=dice_roll2;
+                                        player2_position += dice_roll2;
                                         break;
                                 case IS_SNAKE:
-                                        player2_position-=dice_roll2;
+                                        player2_position -= dice_roll2;
                                         if (player2_position < 0)
                                                 player2_position = 0;
                                         break;
                         }
                         if (player2_position > 100)
-                                player2_position-=dice_roll2;
+                                player2_position -= dice_roll2;
                         System.out.println("Player2 is at position "+player2_position);
 
 		}
